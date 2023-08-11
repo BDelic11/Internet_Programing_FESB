@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almost Facebook</title>
+    <link rel="stylesheet" href="style/feedPageStyle.css">
+   
+    <script src="https://kit.fontawesome.com/ed45e9a285.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+    <nav>
+
+        <div class="left">
+            
+            <div class="logo">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+
+    <div class="search-bar">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search Almost Facebook">
+        
+    </div>
+    
+</div>
+
+<div class="center">
+
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-tv"></i>
+    <i class="fa-solid fa-store"></i>
+    <i class="fa-solid fa-users"></i>
+    
+</div>
+
+<div class="right">
+    <i class="fa-solid fa-plus"></i>
+    <i class="fa-brands fa-facebook-messenger"></i>
+        <i class="fa-solid fa-bell"></i>
+        <img src="./images/profile_pic.jpg" alt="profile-image">
+
+
+    </div>
+
+</nav>
+
+<!---------------main--------------->
+
+<div class="main">
+
+    
+    <!---------------left--------------->
+    
+    <div class="left">
+
+        <div class="left_choice">
+
+            <img src="./images/profile_pic.jpg" alt="profile-image">
+            <p>Bruno Delic</p>
+        </div>
+
+        <div class="left_choice">
+
+            <i class="fa-solid fa-user-group"></i>    
+            <p>Friends</p>
+            
+        </div>
+
+        <div class="left_choice">
+
+            <i class="fa-solid fa-users"></i>
+            <p>Groups</p>
+            
+        </div>
+
+        <div class="left_choice">
+
+            <i class="fa-solid fa-store"></i>
+            <p>Marketplace</p>
+            
+        </div>
+
+        <div class="left_choice">
+
+            <i class="fa-solid fa-tv"></i>
+            <p>Watch</p>
+            
+        </div>
+
+        <div class="left_choice">
+
+            <i class="fa-solid fa-angle-down"></i>
+            <p>More</p>
+            
+        </div>
+
+        <hr>
+
+        <p>Shortcuts</p>
+       
+
+        <div class="left_choice2">
+
+            <a href="https://apps.facebook.com/candycrush/?ref=bookmarks&fb_source=web_shortcut&count=0">
+
+                <img src="./images/candyCrash.png" alt="candycrush">
+                <p>Candy Crush Saga</p>
+            </a>
+            
+        </div>
+
+        <div class="left_choice2">
+
+            <a href="https://apps.facebook.com/livepool/?ref=bookmarks&fb_source=web_shortcut&count=0">
+
+                <img src="./images/8ball.png" alt="8ball">
+                <p>8 Ball Pool</p>
+            </a>
+            
+        </div>
+
+
+
+
+
+    </div>
+
+    
+
+    <!---------------center--------------->
+
+    <div class="center">
+
+        <!-- 
+            <div id="feed">
+                <?php
+                // Connect to database
+                $db = mysqli_connect("localhost", "username", "password", "database_name");
+    
+                // Retrieve posts from database in reverse order
+                $result = mysqli_query($db, "SELECT * FROM posts ORDER BY id DESC");
+    
+                // Display posts
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "<div class='post'>";
+                    echo "<h2>" . $row['title'] . "</h2>";
+                    echo "<p>" . $row['body'] . "</p>";
+                    echo "</div>";
+                }
+                ?>
+                CREATE TABLE posts (
+	id INTEGER PRIMARY KEY AUTO_INCREMENT,
+	title VARCHAR(255) NOT NULL,
+	body TEXT NOT NULL
+
+    ALTER TABLE posts
+ADD author VARCHAR(255) NOT NULL,
+ADD date_posted DATETIME NOT NULL;
+
+);
+            </div>
+        --> 
+
+        <div id="slider">
+            <div id="slider-main-picture-container">
+                <i class="fa fa-chevron-left slider-arrow-left slider-arrow" aria-hidden="true"></i>  
+                <img alt="picture" src="images/cetina.jpg"/>
+                <i class="fa fa-chevron-right slider-arrow-right slider-arrow" aria-hidden="true"></i>
+            </div>
+            <div id="slider-thumbnails-container">
+              <div class="thumbnail selected" data-large-img-url="images/cetina.jpg">
+                <img src="images/thumbnails/cetina.jpg" alt="cetina"/>
+              </div>
+              <div class="thumbnail" data-large-img-url="images/kozjak.jpg">
+                <img src="images/thumbnails/kozjak.jpg" alt="kozjak"/>
+              </div>
+              <div class="thumbnail" data-large-img-url="images/sibenik.jpg">
+                <img src="images/thumbnails/sibenik.jpg" alt="katedrala"/>
+              </div>
+              <div class="thumbnail" data-large-img-url="images/primosten.jpg">
+                <img src="images/thumbnails/primosten.jpg" alt="primosten"/>
+              </div>
+              <div class="thumbnail" data-large-img-url="images/svilaja.jpg">
+                <img src="images/thumbnails/svilaja.jpg" alt="svilaja"/>
+              </div>
+            </div>
+          </div>
+
+          <div id="cards-container">
+            
+            <article class="card">
+             
+              
+              <h3>Sime Parac </h3>
+              <p>
+                  Cetina izvire na nadmorskoj visini od 385 m u sjeverozapadnim obroncima Dinare
+                  blizu sela Cetina, 7 km sjeverno od Vrlike, a po kojem je rijeka i dobila ime.
+                  Izvor Cetine je jezero duboko preko stotinu metara.
+              </p>
+              <img src="images/Posts/SimePost.jpg" alt="cetina"/>
+              <i class="fa fa-heart-o heart-icon clickable-icon"></i>
+              <i class="fa fa-plus add-paragraph-icon clickable-icon"></i>
+              <div class="card-star-container">
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+              </div>
+             
+            </article>
+            
+            <article class="card">
+             <!-- <i class="fa fa-times delete-button clickable-icon"></i> -->
+ 
+              <h3>433 </h3>
+              <p>
+                  Kozjak je planina koja sa sjeverne strane okružuje grad Kaštela.
+                  Njegova je južna padina vrlo strma i klisurasta, a sjeverni kameniti
+                  obronci postupno prelaze u valovitu visoravan Dalmatinske Zagore.
+              </p>
+              <p>
+                  To je u hrvatskom planinarstvu najpoznatije popularno značenje naziva Kozjak,
+                za razliku od manje poznatog ali znatno višega Velikog Kozjaka iznad Kijeva u Dalmatinskoj Zagori,
+                1207 m.
+              </p>
+              <p>
+                    Najupečatljiviji dio Kozjaka je južna stijena (16 km), koja je ujedno najduža u Hrvatskoj,
+                  mada razmjerno male visine (50 – 250 m).
+              </p>
+              <img src="images/Posts/433Post.jpg" alt="kozjak"/>
+              <i class="fa fa-heart-o heart-icon clickable-icon"></i>
+              <i class="fa fa-plus add-paragraph-icon clickable-icon"></i>
+              <div class="card-star-container">
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+                  <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+              </div>
+             
+            </article>
+    
+            
+    <!---------------right--------------->
+
+    <div class="right">
+
+        <h3>Contacts</h3>
+        <div class="search-bar">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Contacts">
+            
+        </div>
+
+        
+
+    </div>
+    
+
+    
+</div>
+    
+</body>
+</html>

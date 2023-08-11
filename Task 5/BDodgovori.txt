@@ -1,0 +1,85 @@
+	1.What is the difference between prompt and alert box in JavaScript, show an example of their use.
+
+alert pokazuje poruku.
+prompt - pokazuje poruku i pita korisnika za unos teksta
+
+alert("Ja sam Ivo");
+
+prompt("Unesi ime:");
+
+
+	2.Code below defines an object, what would console.log(person.name, person['age'], person.car, person.car.year, person.lastname) log to console?
+
+miljenko 42 {year: 2023, make: 'Toyota', model: 'Corolla'} 2023 undefined
+
+	3.What will the code below output to the console and why?
+
+array 1: length=7 last=d,e,d,i,c
+array 2: length=7 last=d,e,d,i,c
+
+Zato sto odvaja slovo po slovo marija u niz onda reversa (od kraja do pocetka). Razdavaja isto tako dedic i stavlja array na kraju niza kao 7 clan i sa slice(-1) uzimaju taj zadnji array te ga ispisuje isto se dogada i sa arr2 jer je reference tip.
+
+	4.What will the code below output to the console and why?
+
+0 || 1 = 1 ----- true ili true je true
+1 || 2 = 1 ----- true ili true je true
+0 && 1 = 0 ----- false i true je true
+1 && 2 = 2 ----- true i true je true
+1 && 'text' = text ----- provjerava lijevo i desno jeli true je i onda vraca zadnju procjenjenu stvar
+
+	5.What is a ternary operator? Show an example of use.
+
+Provjerava uvjet u zagradi ako je true vraca lijevu vrijednost od :, a ako je false desnu
+let result = (marks >= 40) ? 'pass' : 'fail';
+
+	6.What is optional chaining? If we have an object let a = { }, why does console.log(a.person.name) give an error but console.log(a.person?.name) does not?
+
+Zato sto ? dopusta nullable varijablu i ne baca gresku.
+
+	7.What are undeclared and undefined variables, what's the difference?
+
+Nedefinirana varijabla znači da je varijabla deklarirana, ali nema vrijednost. Nedeklarirana varijabla znači da varijabla uopće ne postoji u programu.
+
+	8.What is the keyword this in JS?
+
+U JavaScriptu this odnosi se na objekt.
+Koji objekt ovisi o tome kako se this poziva (koristi ili poziva).
+Ova ključna riječ odnosi se na različite objekte ovisno o tome kako se koristi:
+U objektnoj metodi, this se odnosi na objekt.
+Samo se ovo odnosi na globalni objekt.
+U funkciji se this odnosi na globalni objekt.
+U funkciji, u strogom načinu rada, this je nedefinirano.
+U slučaju događaja, this se odnosi na element koji je primio događaj.
+Metode kao što su call(), apply() i bind() mogu this uputiti na bilo koji objekt
+
+
+	9. What are named and anonymus functions in JS? Can you store a function in a variable and then call it? Show examples for both questions.
+
+Anonimne funkcije u JavaScriptu su funkcije koje nemaju nikakvo ime ili identitet. Baš kao, imate ime po kojem vas svi zovu ili identificiraju. No, anonimne funkcije nemaju ime, pa ih ne možemo zvati kao bilo koju drugu funkciju u JavaScriptu.
+
+Primjer:
+
+funkcija (){
+    console.log("Neće se pokrenuti :p ");
+}
+Izlaz:
+
+Pogreška: Funkcijski iskazi zahtijevaju naziv funkcije
+
+	10.What are arrow functions and how are they different from normal functions? Show example.
+
+Funkcije strelica omogućuju nam pisanje kraće sintakse funkcije.U redovnoj funkciji, argumenti će vam dati popis parametara proslijeđenih u funkciju, u funkciji strelice argumenti nisu definirani.
+
+U regularnoj funkciji uvijek morate vratiti bilo koju vrijednost, ali u funkciji Arrow možete preskočiti povratnu ključnu riječ i pisati u jednom retku.
+
+Parametri funkcije strelice trebaju biti jedinstveni.
+
+Prije Arrow:
+hello = function() {
+  return "Hello World!";
+}
+
+Sa Arrow Funkcijom:
+hello = () => {
+  return "Hello World!";
+}

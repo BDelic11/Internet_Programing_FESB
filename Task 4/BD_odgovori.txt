@@ -1,0 +1,81 @@
+1. Name truthy and falsy values in JavaScript.
+falsy = 0 ,-0, Nan, null, undefined, false and ""
+
+2. What is the difference between == and === operators?
+== provjerava je li ista vrijednost
+===provjerava je li ista vrijednost i je li isti tip
+
+3. Why does '' == false equal to true but '' === false is equal to false?
+Jer im je ista vrijednost ,a razlicit tip podataka pa kod == on jedan od njih promijeni 
+da im je isti tip pa je true a === gleda jel im isti tip i nije pa vraca false 
+
+4. What is JavaScript scope, what are the different types of JavaScript scope?
+Postoji global, function i block scope.
+
+5. Describe each scope type and provide an example.
+
+FUNCTION: Varijable definirane unutar funkcije nisu dostupne (vidljive) izvan funkcije.
+Varijable deklarirane s var, let i const prilično su slične kada su deklarirane unutar funkcije.
+
+ function myFunction() {
+  var carName = "Volvo";   // Function Scope
+}
+function myFunction() {
+  let carName = "Volvo";   // Function Scope
+}
+function myFunction() {
+  const carName = "Volvo";   // Function Scope
+}
+
+GLOBAL: 
+Varijable deklarirane globalno (izvan bilo koje funkcije) imaju globalni opseg.
+Globalnim varijablama može se pristupiti s bilo kojeg mjesta u JavaScript programu.
+Varijable deklarirane s var, let i const prilično su slične kada su deklarirane izvan bloka.
+ 
+var x = 2;       // Global scope
+let x = 2;       // Global scope
+const x = 2;       // Global scope
+
+BLOCK: Variables declared with the var keyword can NOT have block scope.
+Variables declared inside a { } block can be accessed from outside the block.
+
+
+6. What is the difference between let and const keywords?
+Let keyword nam omogucava da joj mijenjamo vrijednost poslije u programu dok kod const
+keyword konstanta je vrijednost i ne smijemo je i nemozemo mijenjati.
+
+7.Give an example of use of map, filter, find JavaScript array methods used on:
+const fruits = [ 'apple', 'banana', 'orange', 'kiwi', 'strawberry' ];
+
+const map1 = fruits.map(f => f + 'a');
+fruits.map(function(item) {
+  return fruits.split('').reverse().join('') === item;
+});
+
+
+fruits.filter(function(item) {
+  return fruit.split('').reverse().join('') === item;
+});
+
+fruits.find(f => f.length > 4)
+
+
+
+8. What is the difference between split, slice and splice JavaScript array methods.
+
+SPLIT: Metoda split() dijeli niz u niz podnizova,
+vraća novi niz ,ne mijenja originalni niz.
+Ako se (" ") koristi kao separator, niz se dijeli između riječi.
+
+SLICE: Metoda slice() vraća odabrane elemente u nizu, kao novi niz 
+,odabire od zadanog početka do (ne uključujući) zadanog kraja, ne mijenja izvorni niz.
+
+SPLICE: 
+Metoda splice() dodaje i/ili uklanja elemente niza, prepisuje izvorni niz
+
+9. What is hoisting?
+U JavaScriptu se varijabla može deklarirati nakon što se upotrijebi.
+Drugim riječima; varijabla se može koristiti prije nego što je deklarirana.
+
+x = 5;
+var x;

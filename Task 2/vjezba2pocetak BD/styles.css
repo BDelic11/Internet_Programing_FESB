@@ -1,0 +1,96 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+h1 {
+    color: rgb(0, 57, 142);
+}
+
+#plavo{
+    color: rgb(1,41, 99);
+}
+
+p{
+    background-color: lightgray;
+    padding: 10px;
+    text-align: justify;
+}
+
+.paragraph-special
+{
+    border-width: 1px;
+    border-color: gray;
+}
+
+em{
+    color: red;
+}
+
+strong{
+    background-color: red;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.podebljano{
+    font-weight: bold;
+}
+
+.slike{
+    border-radius: 5px;
+    max-width: 49%;
+    transition: 2s;
+}
+
+.slike:hover{
+    transform: scale(1.2);
+}
+
+#heading-pzi{
+    color: red;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding:5px;
+}
+
+
+thead{ 
+    border: 2px solid black;
+    padding: 5px;
+    background-color:lightgray;
+}
+
+th{
+    border: 2px solid black;
+    padding: 5px;
+    background-color:lightgray;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tr:nth-child(2n+1)
+{
+    background-color: lightskyblue;
+}
+
+tr:nth-child(2n)
+{
+    background-color: lightcoral;
+}
+
+
+tfoot tr td{
+    text-align: center;
+    background-color: white;
+}

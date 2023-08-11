@@ -1,0 +1,535 @@
+:root {
+    --icon: #E4E6EB;
+    --center-icon: #9a9da1;
+    --nav-bar-background: #242526;
+    --placeholder-icon: rgba(100, 100, 100, 0.4);
+    --web-wash: #18191A;
+    --blue:#2374E1 ;
+    --left-choice-hover:#464647;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    color: var(--icon);
+    text-decoration: none;
+}
+
+/*-----------------nav-------------------------*/
+
+nav {
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: 1px solid #333333;
+    background:var(--nav-bar-background);
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
+nav i {
+    
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    margin-inline: 5px;
+    font-size: 20px;
+    color: var(--icon);
+}
+
+nav .right img {
+
+    width: 40px;
+    height: 40px;
+
+
+}
+
+nav .left {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+
+.search_input {
+    width: 250px;
+    height: 40px;
+    background:var(--placeholder-icon); ;
+    padding: 0 10px;
+    position: relative;  
+    color: var(--icon);
+    background: var(--placeholder-icon);
+    border-radius: 20px;
+    border: none;  
+    outline: none;
+  }
+
+  .search_input:focus {
+    background-color: var(--web-wash);
+  } 
+
+
+nav .left .search-bar i {
+    line-height: 40px;
+    font-size: 19px;
+    color: #919191;
+    margin-right: 5px;
+    background: var(---centerIcon);
+    
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+nav .right i {
+
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background:var(--placeholder-icon);
+    padding-left: 17px ;
+    margin-inline: 5px;
+    font-size: 20px;
+    color: var(--icon);
+
+}
+
+nav .right img {
+
+    border-radius: 50%;
+    margin-left: 5px;
+    width: 55px;
+    height: 55px;
+
+
+}
+
+
+nav .right i:hover {
+   background-color: #5a5757;
+    cursor: pointer;
+}
+
+nav .center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+nav .center i {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    margin-inline: 5px;
+    color: var(--center-icon);
+    font-size: 25px ;
+
+}
+
+nav .center i:hover{
+    background:var(--placeholder-icon);
+    transition-delay: 5ms;
+    transition-duration: .4s;
+    cursor: pointer;
+
+}
+
+
+nav .left i {
+
+    
+    background:var(--icon);
+   
+    font-size: 55px;
+    color: var(--blue);
+}
+
+nav .center a {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-inline: 5px;
+}
+
+
+
+/*--------main------------------*/
+.main {
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: var(--web-wash);
+    padding-bottom: 200px;
+   
+}
+
+ .background {
+
+    width: 100%;
+    height:700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ .profile-top {
+
+    position: relative;
+    background: linear-gradient(  rgb(148, 138, 122) ,var(--nav-bar-background));
+    height: 850px;
+
+
+}
+
+.profile-pic{
+    position: absolute;
+    left: 17%;
+    bottom: 55px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-top .background img {
+
+    width: 75%;
+    height:600px;
+    object-fit:cover;
+    border-radius: 8px;
+   
+
+}
+
+ .profile-pic img:not(.background){
+    width: 250px;
+   
+    border-radius: 50%;
+    border: 5px solid var(--nav-bar-background);
+} 
+
+.ime-pratitelji {
+    padding-top: 130px;
+    padding-left: 10px;
+} 
+
+.ime-pratitelji h2 {
+    font-size: 4vw;
+}
+
+.ime-pratitelji p{
+    font-size: 2vw;
+}
+
+
+
+.profile-feed {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 15px;
+    text-align: center;
+}
+
+ .WhatsOnMind p {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: larger;
+    color: var(--center-icon);
+}
+
+
+.main .profile-feed .WhatsOnMind {
+     width:  70%;
+     height: 200px;
+     background: var(--nav-bar-background);
+     border-radius: 10px;
+     position: relative;
+}
+
+
+  .feed_input:focus {
+    background-color: var(--web-wash);
+    
+  }
+  
+
+  .feed_input {
+    color: var(--center-icon);
+  }
+
+
+
+
+  /*----------------RESPONSIVE----------------------*/
+
+  @media screen and (max-width: 550px){
+    nav i{
+     font-size: 5vw !important; }
+ 
+     .profile-top {
+            height: 600px;
+        
+     }
+
+     .profile-pic{
+        left: 5%;
+        bottom:50px;
+     }
+
+     .profile-pic img:not(.background) {
+        width: 200px;}
+
+        .ime-pratitelji h2 {
+            font-size: 6vw;
+        }
+
+
+     .profile-top .background img {
+      width: 100%;
+        height: 500px;
+    }
+
+    .background {
+        height: 600px;
+    }
+ 
+     p {
+         font-size: 13px !important;
+     }
+ 
+     nav {
+         height: auto;
+ 
+     }
+     nav .center{
+         width: 70% !important;
+     }
+ 
+
+     .WhatsOnMind {
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+
+    .cards-container {
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+
+    .card {
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+ 
+ 
+ }
+ 
+ 
+ @media screen and (max-width: 1100px) {
+     
+     nav {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     
+     }
+ 
+     nav .center {
+         
+        gap: 0 !important;
+         transition-duration: 0.2ms;
+     }
+ 
+     nav .left {
+         display: none;
+     }
+     nav .right {
+         display: none;
+     }
+ 
+   
+ 
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 900px) {¸
+ 
+     p {
+         font-size: 0.8vw !important;
+     }
+ 
+    .main .left{
+         display: none;
+         width: 80%;
+     }
+ 
+     .main .center {
+     
+         height: auto;
+         margin-left: 0 !important;
+     }
+ 
+     nav .left {
+         display: none;
+     }
+     nav .right {
+         display: none;
+     }
+     nav .center{
+         width: 70% !important;
+     }
+     .card p{
+         font-size: 16px;
+     }
+ }
+ 
+  /*---------------END OF RESPONSIVE----------------------*/
+
+
+  /*----------------profile cards----------------------*/
+
+
+  .main .profile-feed .cards-container .card {
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: var(--nav-bar-background);
+    padding-bottom: 20px;
+    
+
+}
+
+.main .profile-feed .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+   
+    text-align: center;
+}
+
+.num-likes {
+    margin-left: 15px;
+}
+
+.card {
+    color:var(--icon);  
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    
+}
+
+.card p, .card h3, .card i {
+    margin: 15px;
+    margin-inline: 25px;
+
+}
+
+.card h3 {
+    padding-top: 15px;
+    text-align: start;
+}
+
+.card p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main .profile-feed img{
+
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    
+}
+
+#post_button {
+    background-color: var(--left-choice-hover);
+    color: var(--icon);
+    border: none;
+   width: 150px;
+   height: 50px;
+   border-radius: 8px;
+   font-size: large;
+   font-weight: bold;
+   text-align: center;
+}
+
+
+#post_button:hover {
+    transition-duration: 0.5s;
+    background-color: var(--web-wash)   ;
+
+}
+
+.feed_input {
+    background-color: var(--left-choice-hover);
+    padding-left:20px;
+    height: 50px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: none;
+    font-size: larger;
+    outline: none;
+    
+}
+
+/*---RESPONSIVE-----*/
+
+@media screen and (max-width: 1000px) {
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    nav .center {
+        gap: 50px;
+        transition-duration: 0.2ms;
+    }
+
+    nav .left {
+        display: none;
+    }
+    nav .right {
+        display: none;
+    }
+}
+
+

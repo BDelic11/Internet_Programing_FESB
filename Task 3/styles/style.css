@@ -1,0 +1,124 @@
+body {
+    font-family: Georgia;
+    margin: 0;
+    
+    --primary-color: #2d5c88;
+    --light-primary-color: #96aec4;
+    
+    --secondary-color: #4e4e4e;
+    --light-secondary-color: #d3d3d3;
+    }
+    
+    header {
+    background-color: var(--primary-color);
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    }
+    
+    #search-container {
+    background-color: white;
+    color: var(--secondary-color);
+    border-radius: 8px;
+    }
+    
+    .search-icon {
+    padding: 0.5em;
+    border-right: 1px solid var(--light-secondary-color);
+    }
+    
+    #search-box {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    }
+    
+    main {
+    max-width: 800px;
+    margin: 4em auto;
+    }
+    
+    nav {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .links-container a {
+    background-color: var(--light-primary-color);
+    color: white;
+    
+    text-decoration: none;
+    padding: 0.5em;
+    margin-right: 1em;
+    }
+    
+    .links-container a:last-child{
+    margin-right: 0;
+    }
+    
+    img {
+    max-width: 100%;
+    }
+    
+    nav .links-container .selected {
+    border-bottom: 3px solid var(--primary-color);
+    }
+    
+    nav .links-container .selected:not(:last-child) {
+    border-bottom: 3px solid transparent;
+    }
+    
+    #thumbnails-container {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .thumbnail:not(:last-of-type){
+    margin-right: 5px;
+    }
+    
+    .thumbnail.selected .thumbnail {
+    border-bottom: 3px solid transparent;
+    }
+    
+    #thumbnails-container .thumbnail.selected {
+    border-bottom: 3px solid var(--primary-color);
+    }
+    
+    #cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    }
+    
+    #cards-container .card {
+    position: relative;
+    background-color: var(--light-secondary-color);
+    padding: 5px;
+    }
+    
+    #cards-container .card .delete-button {
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    color: var(--secondary-color);
+    }
+    
+    footer {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    place-content: center;
+    margin-top: 2rem;
+    padding: 8px;
+    }
